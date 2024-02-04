@@ -15,10 +15,14 @@ section {
 }
 
 header {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 header .imgbox {
   width: 40px;
+}
+header nav {
+  display: flex;
+  align-items: center;
 }
 header nav a {
   font-size: 20px;
@@ -27,6 +31,25 @@ header nav a {
 }
 header nav .home-color {
   color: #74bebc;
+}
+header .btn .icon {
+  padding: 15px;
+  background-color: #f2f2f4;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+@media screen and (max-width: 992px) {
+  header nav a {
+    display: none;
+  }
+  header .btn .icon {
+    padding: 15px;
+    background-color: #f2f2f4;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+  }
 }
 
 #beautiful {
